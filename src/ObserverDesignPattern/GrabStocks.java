@@ -1,0 +1,15 @@
+package ObserverDesignPattern;
+
+public class GrabStocks {
+
+	public static void main(String[] a) {
+
+		StackGrabber stackgraber = new StackGrabber();
+
+		StackObserver observer1 = new StackObserver(stackgraber);
+
+		stackgraber.setIBMPrice(100.1);
+		stackgraber.setApplePrice(200.22);
+		stackgraber.setGoolePrice(330.2);
+	}
+}
