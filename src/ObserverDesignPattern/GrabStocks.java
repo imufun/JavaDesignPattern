@@ -11,5 +11,13 @@ public class GrabStocks {
 		stackgraber.setIBMPrice(100.1);
 		stackgraber.setApplePrice(200.22);
 		stackgraber.setGoolePrice(330.2);
+
+		StackObserver observer2 = new StackObserver(stackgraber);
+
+		stackgraber.setIBMPrice(100.1);
+		stackgraber.setApplePrice(200.22);
+		stackgraber.setGoolePrice(330.2);
+		
+		stackgraber.unregister(observer1);
 	}
 }
